@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MJ6 Montajes</title>
+
+<link rel="stylesheet" href="styles_form.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <img src="MJ16-01.png" class="logo">
+        <span class="brand">MJ6 MONTAJES</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li class="button"><a href="index.html">Inicio</a></li>
+            <li class="button"><a href="nosotros.html">Nosotros</a></li>
+            <li class="button"><a href="servicios.html">Servicios</a></li>
+            <li class="button"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--  FORMULARIO  -->
+
+<section class="form-container">
+
+  <h2 class="form-title">Contacto</h2>
+
+  <form id="constructionForm" action="enviar.php" method="POST">
+
+    <div class="form-group">
+      <input type="text" name="name" id="inputName" placeholder="Nombre completo" required class="form-input">
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" id="inputEmail" placeholder="Email" required class="form-input">
+    </div>
+
+    <div class="form-group">
+      <input type="tel" name="phone" id="inputPhone" placeholder="Teléfono" class="form-input">
+    </div>
+
+    <div class="form-group">
+      <select name="service" id="selectService" class="form-select">
+        <option value="obra_nueva">Obra nueva</option>
+        <option value="reforma">Reforma</option>
+        <option value="rehabilitacion">Rehabilitación</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" id="textareaMessage" placeholder="Mensaje" class="form-textarea"></textarea>
+    </div>
+
+    <button type="submit" class="form-button" id="submitButton">
+      Enviar solicitud
+    </button>
+
+  </form>
+</section>
+
+<!--  BOT  -->
+
+<section class="bot">
+    <div>
+        <h3>✔ PROFESIONALIDAD</h3>
+        <p>Trabajos bien hechos desde el primer día.</p>
+    </div>
+    <div>
+        <h3>✔ EXPERIENCIA</h3>
+        <p>Amplia trayectoria en el sector.</p>
+    </div>
+    <div>
+        <h3>✔ CALIDAD</h3>
+        <p>Materiales duraderos y resistentes.</p>
+    </div>
+</section>
+
+<footer>
+<p>© 2026 MJ6 Montajes</p>
+</footer>
+
+</body>
+</html>

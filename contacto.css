@@ -1,0 +1,199 @@
+/* =========================================================
+   CONTACTO — ESTÉTICA EXACTA INDEX MJ6
+   ========================================================= */
+
+/* HERO SIMPLE */
+.hero-simple {
+    padding: 140px 0 60px;
+    text-align: center;
+    background: var(--bg);
+}
+
+.hero-simple h1 {
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.hero-simple p {
+    color: var(--text-soft);
+    font-size: 16px;
+}
+
+/* FORM SECTION */
+.form-container {
+    padding: 80px 0 120px;
+    background: var(--bg);
+}
+
+/* FORM */
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* INPUT GROUP */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 16px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    outline: none;
+}
+
+/* TEXTAREA */
+.form-textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+/* SELECT */
+.form-select {
+    cursor: pointer;
+}
+
+/* FOCUS EFFECT (igual index) */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-bottom-color: var(--gold);
+}
+
+/* BUTTON estilo CTA index */
+.form-button {
+    width: 100%;
+    padding: 18px;
+    margin-top: 10px;
+    background: var(--gold);
+    color: #0a0a0a;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.form-button:hover {
+    background: var(--gold-2);
+    transform: translateY(-2px);
+}
+
+/* INFO BOT SECTION */
+.bot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 80px 10%;
+    background: var(--bg-2);
+    text-align: center;
+}
+
+.bot h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.bot p {
+    color: var(--text-soft);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .bot {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-simple h1 {
+        font-size: 34px;
+    }
+}
+
+/* =========================================================
+   SOCIAL SECTION — ESTILO MJ6
+   ========================================================= */
+
+.social-section {
+    padding: 80px 0;
+    background: var(--bg);
+    text-align: center;
+}
+
+.social-title {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: var(--text);
+}
+
+.social-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--gold);
+    margin: 15px auto 0;
+}
+
+/* ICONS */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* ICON LINK */
+.social-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    transition: 0.3s ease;
+    background: var(--bg-2);
+}
+
+/* IMAGE */
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* HOVER EFFECT (oro estilo index) */
+.social-icon:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+    box-shadow: 0 0 20px rgba(201, 169, 97, 0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 48px;
+        height: 48px;
+    }
+}

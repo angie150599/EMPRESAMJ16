@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | MJ6 Montajes</title>
+
+<!-- IMPORTANTE: primero el estilo global del index -->
+<link rel="stylesheet" href="style.css">
+
+<!-- luego estilos del contacto -->
+<link rel="stylesheet" href="contacto.css">
+
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER (IGUAL AL INDEX) -->
+<header class="site-header">
+    <a href="index.html" class="logo-link">
+        <img src="MJ16-01.png" class="logo" alt="MJ6 Montajes">
+
+        <span class="brand">
+            <span class="brand-name">MJ6 Montajes</span>
+            <span class="brand-tag">Excelencia metálica</span>
+        </span>
+    </a>
+
+    <nav class="nav-main">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+
+        <a href="contacto.html" class="nav-cta">Presupuesto</a>
+    </nav>
+
+    <button class="burger"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO SIMPLE -->
+<section class="hero-simple">
+    <div class="container">
+        <h1>Contacto</h1>
+        <p>Cuéntanos tu proyecto y te responderemos en menos de 24h.</p>
+    </div>
+</section>
+
+<!-- FORM -->
+<section class="form-container">
+
+  <div class="container">
+
+    <form id="constructionForm" action="enviar.php" method="POST">
+
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Nombre completo" required class="form-input">
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" required class="form-input">
+      </div>
+
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Teléfono" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <select name="service" class="form-select">
+          <option value="obra_nueva">Obra nueva</option>
+          <option value="reforma">Reforma</option>
+          <option value="rehabilitacion">Rehabilitación</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" placeholder="Mensaje" class="form-textarea"></textarea>
+      </div>
+
+      <button type="submit" class="form-button">
+        Enviar solicitud
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- REDES SOCIALES -->
+<section class="social-section">
+
+    <div class="container">
+
+        <h2 class="social-title">Síguenos</h2>
+
+        <div class="social-icons">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/34600000000" target="_blank" class="social-icon">
+                <img src="img/Whatsapp_icon.png" alt="WhatsApp">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                <img src="img/Instagram_icon.png" alt="Instagram">
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com/" target="_blank" class="social-icon">
+                <img src="img/X_icon.png" alt="X">
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INFO EXTRA -->
+<section class="bot">
+    <div>
+        <h3>PROFESIONALIDAD</h3>
+        <p>Trabajo serio y estructurado.</p>
+    </div>
+
+    <div>
+        <h3>EXPERIENCIA</h3>
+        <p>Más de 20 años en el sector.</p>
+    </div>
+
+    <div>
+        <h3>CALIDAD</h3>
+        <p>Acabados duraderos y precisos.</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 MJ6 Montajes</p>
+    </div>
+</footer>
+
+</body>
+</html>
